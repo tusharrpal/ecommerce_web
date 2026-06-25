@@ -3,16 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping Cart - Apna Bazar</title>
     <link rel="stylesheet" href="./Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="container">
-        <div id="cartContent"></div>
-        <div id="totalPrice"></div>
-    </div>
-
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="./index.html" class="logo">Apna Bazar</a>
+        </div>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./index.html#shop-section">Shop</a>
+            <a href="./index.html#deals">Deals</a>
+        </div>
+        <div class="navbar-center">
+            <input type="search" placeholder="Search..." id="search-bar">
+        </div>
+        <div class="navbar-right">
+            <a href="./Cart.html" class="icon cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a>
+            <a href="#" class="icon"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
     
+    <main id="container" class="cart-shell">
+        <section class="cart-panel">
+            <div class="cart-title">
+                <p>Shopping Cart</p>
+                <h1>Your selected products</h1>
+            </div>
+            <div id="cartContent" class="cart-list"></div>
+        </section>
+
+        <aside id="totalPrice" class="order-summary"></aside>
+    </main>
+
 <script src="./Cart.js"></script>
 </body>
 </html>
